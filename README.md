@@ -45,11 +45,11 @@
   - [2.7 Data-free Machine Unlearning](#27-data-free-machine-unlearning)
 
 - [3. Trustworthy Machine Learning](#3-trustworthy-machine-learning)
-  - [3.1 Private-preserve Learning](#31-private-preserve-learning)
+  - [3.1 Privacy-preserve Learning](#31-privacy-preserve-learning)
   - [3.2 Long-tail Learning](#32-long-tail-learning)
   - [3.3 De-bias Learning](#33-de-bias-learning)
   - [3.4 Machine Unlearning](#34-machine-unlearning)
-  - [3.5 Data Purification Against Adversarial Attack](#35-data-purification-against-adversarial-attack)
+  - [3.5 Adversarial Defense](#35-adversarial-defense)
   - [3.6 Data Copyright Protection](#36-data-copyright-protection)
 
 - [4. Reinforcement Learning](#4-reinforcement-learning)
@@ -184,7 +184,7 @@
 
 ## 3. Trustworthy Machine Learning
 
-### 3.1 Private-preserve Learning
+### 3.1 Privacy-preserve Learning
 
 | Title | Conference | Code |
 |-------|------------|------|
@@ -208,7 +208,7 @@
 |-------|------------|------|
 | **[Title Placeholder](#)** | Conference Year | [code](#) |
 
-### 3.5 Data Purification Against Adversarial Attack
+### 3.5 Adversarial Defense
 
 | Title | Conference | Code |
 |-------|------------|------|
