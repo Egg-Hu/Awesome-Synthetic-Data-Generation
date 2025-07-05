@@ -42,7 +42,6 @@
   - [2.4 Data-free Model Quantization/Pruning](#24-data-free-model-quantizationpruning)
   - [2.5 Data-free Meta-learning](#25-data-free-meta-learning)
   - [2.6 Data-free Continual Learning](#26-data-free-continual-learning)
-  - [2.7 Data-free Machine Unlearning](#27-data-free-machine-unlearning)
 
 - [3. Trustworthy Machine Learning](#3-trustworthy-machine-learning)
   - [3.1 Privacy-preserve Learning](#31-privacy-preserve-learning)
@@ -173,13 +172,6 @@
 | Title | Conference | Code |
 |-------|------------|------|
 | **[Title Placeholder](#)** | Conference Year | [code](#) |
-
-### 2.7 Data-free Machine Unlearning
-
-| Title | Conference | Code |
-|-------|------------|------|
-| **[Title Placeholder](#)** | Conference Year | [code](#) |
-
 ---
 
 ## 3. Trustworthy Machine Learning
