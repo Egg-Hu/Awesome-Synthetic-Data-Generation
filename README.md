@@ -93,24 +93,6 @@
 </details>
 
 ---
-<a name="readme-top"></a>
-
-<h1 align="center">Awesome Synthetic Data Generation</h1>
-
-<div align="center">
-
-![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-green)
-![Stars](https://img.shields.io/github/stars/Egg-Hu/Awesome-Synthetic-Data-Generation?style=social)
-![Forks](https://img.shields.io/github/forks/Egg-Hu/Awesome-Synthetic-Data-Generation?style=social)
-<a href='https://arxiv.org/pdf/2409.18169'><img src='https://img.shields.io/badge/arXiv-2409.18169-b31b1b.svg'></a>
-
-</div>
-
-<p align="center">
-    <b>Curated collection of papers and resources on synthetic data generation, categorized by paradigms, applications, and challenges.</b>
-</p>
-
----
 
 ## 1. Paradigms
 
