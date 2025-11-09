@@ -62,185 +62,316 @@
 
 ---
 
-## 1. Foundation Model
+# 📚 Awesome Synthetic Data Generation
 
-### 1.1 Pre-training Stage
+## 1. Paradigms
 
-| Title | Conference | Code |
-|-------|------------|------|
-| **[Title Placeholder](#)** | Conference Year | [code](#) |
-| **[Title Placeholder](#)** | Conference Year | [code](#) |
+### 1.1 AIGC-Based Synthesis
+#### Synthesis from scratch
+| Title | Conference | Year | Code |
+|-------|------------|------|------|
+| **[Paper Name](link)** | ConfName | YYYY | [GitHub](link) |
 
-### 1.2 Post-training Stage
+#### Synthesis from seeds
+| Title | Conference | Year | Code |
+|-------|------------|------|------|
+| **[Paper Name](link)** | ConfName | YYYY | [GitHub](link) |
 
-#### 1.2.1 Reasoning
-
-| Title | Conference | Code |
-|-------|------------|------|
-| **[Title Placeholder](#)** | Conference Year | [code](#) |
-
-
-
-#### 1.2.2 Code
-
-| Title | Conference | Code |
-|-------|------------|------|
-| **[Title Placeholder](#)** | Conference Year | [code](#) |
-
-#### 1.2.3 Instruction
-
-| Title | Conference | Code |
-|-------|------------|------|
-| **[Title Placeholder](#)** | Conference Year | [code](#) |
-
-#### 1.2.4 Preference
-
-| Title | Conference | Code |
-|-------|------------|------|
-| **[Title Placeholder](#)** | Conference Year | [code](#) |
-
-#### 1.2.5 Tabular Data
-
-| Title | Conference | Code |
-|-------|------------|------|
-| **[Title Placeholder](#)** | Conference Year | [code](#) |
-
-#### 1.2.6 Medical
-
-| Title | Conference | Code |
-|-------|------------|------|
-| **[Title Placeholder](#)** | Conference Year | [code](#) |
-
-### 1.3 Inference Stage
-
-#### 1.3.1 Prompt Engineering
-
-| Title | Conference | Code |
-|-------|------------|------|
-| **[Title Placeholder](#)** | Conference Year | [code](#) |
-
-#### 1.3.2 In-Context Learning
-
-| Title | Conference | Code |
-|-------|------------|------|
-| **[Title Placeholder](#)** | Conference Year | [code](#) |
-
-### 1.4 Evaluation Stage
-
-#### 1.4.1 Synthetic Benchmark
-
-| Title | Conference | Code |
-|-------|------------|------|
-| **[Title Placeholder](#)** | Conference Year | [code](#) |
+#### Synthesis from structure
+| Title | Conference | Year | Code |
+|-------|------------|------|------|
+| **[Paper Name](link)** | ConfName | YYYY | [GitHub](link) |
 
 ---
 
-## 2. Overcome Data Inaccessibility
+### 1.2 Inversion-Based Synthesis
+#### Data-space inversion
+| Title | Conference | Year | Code |
+|-------|------------|------|------|
+| **[Paper Name](link)** | ConfName | YYYY | [GitHub](link) |
 
-### 2.1 Few-shot and Zero-shot Learning
-
-| Title | Conference | Code |
-|-------|------------|------|
-| **[Title Placeholder](#)** | Conference Year | [code](#) |
-
-### 2.2 Federated Learning
-
-| Title | Conference | Code |
-|-------|------------|------|
-| **[Title Placeholder](#)** | Conference Year | [code](#) |
-
-### 2.3 Data-free Knowledge Distillation
-
-| Title | Conference | Code |
-|-------|------------|------|
-| **[Title Placeholder](#)** | Conference Year | [code](#) |
-
-### 2.4 Data-free Model Quantization/Pruning
-
-| Title | Conference | Code |
-|-------|------------|------|
-| **[Title Placeholder](#)** | Conference Year | [code](#) |
-
-### 2.5 Data-free Meta-learning
-
-| Title | Conference | Code |
-|-------|------------|------|
-| **[Title Placeholder](#)** | Conference Year | [code](#) |
-
-### 2.6 Data-free Continual Learning
-
-| Title | Conference | Code |
-|-------|------------|------|
-| **[Title Placeholder](#)** | Conference Year | [code](#) |
----
-
-## 3. Trustworthy Machine Learning
-
-### 3.1 Privacy-preserve Learning
-
-| Title | Conference | Code |
-|-------|------------|------|
-| **[Title Placeholder](#)** | Conference Year | [code](#) |
-
-### 3.2 Long-tail Learning
-
-| Title | Conference | Code |
-|-------|------------|------|
-| **[Title Placeholder](#)** | Conference Year | [code](#) |
-
-### 3.3 De-bias Learning
-
-| Title | Conference | Code |
-|-------|------------|------|
-| **[Title Placeholder](#)** | Conference Year | [code](#) |
-
-### 3.4 Machine Unlearning
-
-| Title | Conference | Code |
-|-------|------------|------|
-| **[Title Placeholder](#)** | Conference Year | [code](#) |
-
-### 3.5 Adversarial Defense
-
-| Title | Conference | Code |
-|-------|------------|------|
-| **[Title Placeholder](#)** | Conference Year | [code](#) |
-
-### 3.6 Data Copyright Protection
-
-| Title | Conference | Code |
-|-------|------------|------|
-| **[Title Placeholder](#)** | Conference Year | [code](#) |
+#### Latent-space inversion
+| Title | Conference | Year | Code |
+|-------|------------|------|------|
+| **[Paper Name](link)** | ConfName | YYYY | [GitHub](link) |
 
 ---
 
-## 4. Reinforcement Learning
+### 1.3 Simulation-Based Synthesis
+#### Agent-based simulation
+| Title | Conference | Year | Code |
+|-------|------------|------|------|
+| **[Paper Name](link)** | ConfName | YYYY | [GitHub](link) |
 
-| Title | Conference | Code |
-|-------|------------|------|
-| **[Title Placeholder](#)** | Conference Year | [code](#) |
+#### Platform-based simulation
+| Title | Conference | Year | Code |
+|-------|------------|------|------|
+| **[Paper Name](link)** | ConfName | YYYY | [GitHub](link) |
 
 ---
 
-## 5. Dataset Transformation
+### 1.4 Augmentation-Based Synthesis
+#### Rule-based augmentation
+| Title | Conference | Year | Code |
+|-------|------------|------|------|
+| **[Paper Name](link)** | ConfName | YYYY | [GitHub](link) |
 
-### 5.1 Dataset Expansion
+#### Generative augmentation
+| Title | Conference | Year | Code |
+|-------|------------|------|------|
+| **[Paper Name](link)** | ConfName | YYYY | [GitHub](link) |
 
-| Title | Conference | Code |
-|-------|------------|------|
-| **[Title Placeholder](#)** | Conference Year | [code](#) |
+---
 
-### 5.2 Dataset Distillation
+## 2. Applications
 
-| Title | Conference | Code |
-|-------|------------|------|
-| **[Title Placeholder](#)** | Conference Year | [code](#) |
+### 2.1 Model-centric AI
+#### General Model Enhancement → General ability
+| Title | Conference | Year | Code |
+|-------|------------|------|------|
+| **[Paper Name](link)** | ConfName | YYYY | [GitHub](link) |
 
-### 5.3 Dataset Purification
+#### Domain Model Enhancement → Reasoning
+| Title | Conference | Year | Code |
+|-------|------------|------|------|
+| **[Paper Name](link)** | ConfName | YYYY | [GitHub](link) |
 
-| Title | Conference | Code |
-|-------|------------|------|
-| **[Title Placeholder](#)** | Conference Year | [code](#) |
+#### Domain Model Enhancement → Code
+| Title | Conference | Year | Code |
+|-------|------------|------|------|
+| **[Paper Name](link)** | ConfName | YYYY | [GitHub](link) |
+
+#### Domain Model Enhancement → Instruction following
+| Title | Conference | Year | Code |
+|-------|------------|------|------|
+| **[Paper Name](link)** | ConfName | YYYY | [GitHub](link) |
+
+#### Domain Model Enhancement → Alignment
+| Title | Conference | Year | Code |
+|-------|------------|------|------|
+| **[Paper Name](link)** | ConfName | YYYY | [GitHub](link) |
+
+#### Domain Model Enhancement → In-context learning
+| Title | Conference | Year | Code |
+|-------|------------|------|------|
+| **[Paper Name](link)** | ConfName | YYYY | [GitHub](link) |
+
+#### Model Evaluation → Synthetic benchmark
+| Title | Conference | Year | Code |
+|-------|------------|------|------|
+| **[Paper Name](link)** | ConfName | YYYY | [GitHub](link) |
+
+---
+
+### 2.2 Data-centric AI
+#### Data Accessibility → Zero/Few-shot learning
+| Title | Conference | Year | Code |
+|-------|------------|------|------|
+| **[Paper Name](link)** | ConfName | YYYY | [GitHub](link) |
+
+#### Data Accessibility → Federated learning
+| Title | Conference | Year | Code |
+|-------|------------|------|------|
+| **[Paper Name](link)** | ConfName | YYYY | [GitHub](link) |
+
+#### Data Accessibility → Data-free knowledge distillation
+| Title | Conference | Year | Code |
+|-------|------------|------|------|
+| **[Paper Name](link)** | ConfName | YYYY | [GitHub](link) |
+
+#### Data Accessibility → Data-free pruning/quantization
+| Title | Conference | Year | Code |
+|-------|------------|------|------|
+| **[Paper Name](link)** | ConfName | YYYY | [GitHub](link) |
+
+#### Data Accessibility → Data-free meta-learning
+| Title | Conference | Year | Code |
+|-------|------------|------|------|
+| **[Paper Name](link)** | ConfName | YYYY | [GitHub](link) |
+
+#### Data Accessibility → Data-free continual learning
+| Title | Conference | Year | Code |
+|-------|------------|------|------|
+| **[Paper Name](link)** | ConfName | YYYY | [GitHub](link) |
+
+---
+
+#### Data Refinement → Dataset distillation
+| Title | Conference | Year | Code |
+|-------|------------|------|------|
+| **[Paper Name](link)** | ConfName | YYYY | [GitHub](link) |
+
+#### Data Refinement → Dataset augmentation
+| Title | Conference | Year | Code |
+|-------|------------|------|------|
+| **[Paper Name](link)** | ConfName | YYYY | [GitHub](link) |
+
+#### Data Refinement → Dataset expansion
+| Title | Conference | Year | Code |
+|-------|------------|------|------|
+| **[Paper Name](link)** | ConfName | YYYY | [GitHub](link) |
+
+#### Data Refinement → Dataset purification
+| Title | Conference | Year | Code |
+|-------|------------|------|------|
+| **[Paper Name](link)** | ConfName | YYYY | [GitHub](link) |
+
+---
+
+### 2.3 Trustworthy AI
+#### Privacy → Privacy-preserving learning
+| Title | Conference | Year | Code |
+|-------|------------|------|------|
+| **[Paper Name](link)** | ConfName | YYYY | [GitHub](link) |
+
+#### Safety & Security → Model inversion attack
+| Title | Conference | Year | Code |
+|-------|------------|------|------|
+| **[Paper Name](link)** | ConfName | YYYY | [GitHub](link) |
+
+#### Safety & Security → Model stealing attack
+| Title | Conference | Year | Code |
+|-------|------------|------|------|
+| **[Paper Name](link)** | ConfName | YYYY | [GitHub](link) |
+
+#### Safety & Security → Machine unlearning
+| Title | Conference | Year | Code |
+|-------|------------|------|------|
+| **[Paper Name](link)** | ConfName | YYYY | [GitHub](link) |
+
+#### Fairness → De-bias learning
+| Title | Conference | Year | Code |
+|-------|------------|------|------|
+| **[Paper Name](link)** | ConfName | YYYY | [GitHub](link) |
+
+#### Fairness → Long-tail learning
+| Title | Conference | Year | Code |
+|-------|------------|------|------|
+| **[Paper Name](link)** | ConfName | YYYY | [GitHub](link) |
+
+#### Interpretability → Explainable AI
+| Title | Conference | Year | Code |
+|-------|------------|------|------|
+| **[Paper Name](link)** | ConfName | YYYY | [GitHub](link) |
+
+#### Governance → Data watermarking
+| Title | Conference | Year | Code |
+|-------|------------|------|------|
+| **[Paper Name](link)** | ConfName | YYYY | [GitHub](link) |
+
+---
+
+### 2.4 Embodied AI
+#### Sensory Perception Synthesis → Visual Modalities
+| Title | Conference | Year | Code |
+|-------|------------|------|------|
+| **[Paper Name](link)** | ConfName | YYYY | [GitHub](link) |
+
+#### Sensory Perception Synthesis → Proprioceptive & Force Sensing
+| Title | Conference | Year | Code |
+|-------|------------|------|------|
+| **[Paper Name](link)** | ConfName | YYYY | [GitHub](link) |
+
+#### Sensory Perception Synthesis → Multi-modal Sensor Fusion
+| Title | Conference | Year | Code |
+|-------|------------|------|------|
+| **[Paper Name](link)** | ConfName | YYYY | [GitHub](link) |
+
+#### Action & Behavior Generation → Trajectory Synthesis
+| Title | Conference | Year | Code |
+|-------|------------|------|------|
+| **[Paper Name](link)** | ConfName | YYYY | [GitHub](link) |
+
+#### Action & Behavior Generation → Task & Environment Generation
+| Title | Conference | Year | Code |
+|-------|------------|------|------|
+| **[Paper Name](link)** | ConfName | YYYY | [GitHub](link) |
+
+#### Action & Behavior Generation → Human Behavior Synthesis
+| Title | Conference | Year | Code |
+|-------|------------|------|------|
+| **[Paper Name](link)** | ConfName | YYYY | [GitHub](link) |
+
+#### Policy Learning & Generalization → Cross-embodiment Training
+| Title | Conference | Year | Code |
+|-------|------------|------|------|
+| **[Paper Name](link)** | ConfName | YYYY | [GitHub](link) |
+
+#### Policy Learning & Generalization → Vision-Language-Action Models
+| Title | Conference | Year | Code |
+|-------|------------|------|------|
+| **[Paper Name](link)** | ConfName | YYYY | [GitHub](link) |
+
+#### Policy Learning & Generalization → Sim-to-Real Transfer
+| Title | Conference | Year | Code |
+|-------|------------|------|------|
+| **[Paper Name](link)** | ConfName | YYYY | [GitHub](link) |
+
+---
+
+### 2.5 Others
+#### Domain-specific Applications → Autonomous driving
+| Title | Conference | Year | Code |
+|-------|------------|------|------|
+| **[Paper Name](link)** | ConfName | YYYY | [GitHub](link) |
+
+#### Domain-specific Applications → Finance
+| Title | Conference | Year | Code |
+|-------|------------|------|------|
+| **[Paper Name](link)** | ConfName | YYYY | [GitHub](link) |
+
+#### Domain-specific Applications → Medical
+| Title | Conference | Year | Code |
+|-------|------------|------|------|
+| **[Paper Name](link)** | ConfName | YYYY | [GitHub](link) |
+
+#### Domain-specific Applications → Law
+| Title | Conference | Year | Code |
+|-------|------------|------|------|
+| **[Paper Name](link)** | ConfName | YYYY | [GitHub](link) |
+
+#### Domain-specific Applications → Education
+| Title | Conference | Year | Code |
+|-------|------------|------|------|
+| **[Paper Name](link)** | ConfName | YYYY | [GitHub](link) |
+
+#### Structure-specific Applications → Time series
+| Title | Conference | Year | Code |
+|-------|------------|------|------|
+| **[Paper Name](link)** | ConfName | YYYY | [GitHub](link) |
+
+#### Structure-specific Applications → Tabular
+| Title | Conference | Year | Code |
+|-------|------------|------|------|
+| **[Paper Name](link)** | ConfName | YYYY | [GitHub](link) |
+
+#### Structure-specific Applications → Graph
+| Title | Conference | Year | Code |
+|-------|------------|------|------|
+| **[Paper Name](link)** | ConfName | YYYY | [GitHub](link) |
+
+---
+
+## 3. Challenges & Future Directions
+#### Model Collapse
+| Title | Conference | Year | Code |
+|-------|------------|------|------|
+| **[Paper Name](link)** | ConfName | YYYY | [GitHub](link) |
+
+#### Active Synthesis
+| Title | Conference | Year | Code |
+|-------|------------|------|------|
+| **[Paper Name](link)** | ConfName | YYYY | [GitHub](link) |
+
+#### Synthetic Data Evaluation
+| Title | Conference | Year | Code |
+|-------|------------|------|------|
+| **[Paper Name](link)** | ConfName | YYYY | [GitHub](link) |
+
+#### Multi-Modal Synthesis
+| Title | Conference | Year | Code |
+|-------|------------|------|------|
+| **[Paper Name](link)** | ConfName | YYYY | [GitHub](link) |
 
 
 
