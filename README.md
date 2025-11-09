@@ -93,8 +93,24 @@
 </details>
 
 ---
+<a name="readme-top"></a>
 
-# 📚 Awesome Synthetic Data Generation
+<h1 align="center">Awesome Synthetic Data Generation</h1>
+
+<div align="center">
+
+![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-green)
+![Stars](https://img.shields.io/github/stars/Egg-Hu/Awesome-Synthetic-Data-Generation?style=social)
+![Forks](https://img.shields.io/github/forks/Egg-Hu/Awesome-Synthetic-Data-Generation?style=social)
+<a href='https://arxiv.org/pdf/2409.18169'><img src='https://img.shields.io/badge/arXiv-2409.18169-b31b1b.svg'></a>
+
+</div>
+
+<p align="center">
+    <b>Curated collection of papers and resources on synthetic data generation, categorized by paradigms, applications, and challenges.</b>
+</p>
+
+---
 
 ## 1. Paradigms
 
@@ -177,11 +193,15 @@
 | DeepSeek-Prover | - | - | - |
 | WizardCoder | - | - | - |
 
+---
+
 ## 2. Applications
 
 ### 2.1 Model-centric AI
 
-#### 2.1.1 General Model Enhancement → General ability
+#### 2.1.1 General Model Enhancement
+
+##### General ability
 | Title | Conference | Year | Code |
 |-------|------------|------|------|
 | Dialogic | - | - | - |
@@ -190,7 +210,7 @@
 | Magpie | - | - | - |
 | MMIQC | - | - | - |
 
-#### 2.1.2 Domain Model Enhancement → Reasoning
+##### Reasoning
 | Title | Conference | Year | Code |
 |-------|------------|------|------|
 | Dialogic | - | - | - |
@@ -199,7 +219,7 @@
 | Magpie | - | - | - |
 | MMIQC | - | - | - |
 
-#### 2.1.3 Domain Model Enhancement → Code
+##### Code
 | Title | Conference | Year | Code |
 |-------|------------|------|------|
 | Dialogic | - | - | - |
@@ -208,7 +228,7 @@
 | Magpie | - | - | - |
 | MMIQC | - | - | - |
 
-#### 2.1.4 Domain Model Enhancement → Instruction following
+##### Instruction following
 | Title | Conference | Year | Code |
 |-------|------------|------|------|
 | Dialogic | - | - | - |
@@ -217,7 +237,7 @@
 | Magpie | - | - | - |
 | MMIQC | - | - | - |
 
-#### 2.1.5 Domain Model Enhancement → Alignment
+##### Alignment
 | Title | Conference | Year | Code |
 |-------|------------|------|------|
 | Dialogic | - | - | - |
@@ -226,7 +246,7 @@
 | Magpie | - | - | - |
 | MMIQC | - | - | - |
 
-#### 2.1.6 Domain Model Enhancement → In-context learning
+##### In-context learning
 | Title | Conference | Year | Code |
 |-------|------------|------|------|
 | Dialogic | - | - | - |
@@ -235,7 +255,11 @@
 | Magpie | - | - | - |
 | MMIQC | - | - | - |
 
-#### 2.1.7 Model Evaluation → Synthetic benchmark
+---
+
+#### 2.1.2 Model Evaluation
+
+##### Synthetic benchmark
 | Title | Conference | Year | Code |
 |-------|------------|------|------|
 | Disco | - | - | - |
@@ -245,7 +269,9 @@
 
 ### 2.2 Data-centric AI
 
-#### 2.2.1 Data Accessibility → Zero/Few-shot learning
+#### 2.2.1 Data Accessibility
+
+##### Zero/Few-shot learning
 | Title | Conference | Year | Code |
 |-------|------------|------|------|
 | Phi-1 | - | - | - |
@@ -254,7 +280,7 @@
 | AnyGPT | - | - | - |
 | Phi-1.5 | - | - | - |
 
-#### 2.2.2 Data Accessibility → Federated learning
+##### Federated learning
 | Title | Conference | Year | Code |
 |-------|------------|------|------|
 | Phi-1 | - | - | - |
@@ -263,7 +289,7 @@
 | AnyGPT | - | - | - |
 | Phi-1.5 | - | - | - |
 
-#### 2.2.3 Data Accessibility → Data-free knowledge distillation
+##### Data-free knowledge distillation
 | Title | Conference | Year | Code |
 |-------|------------|------|------|
 | Phi-1 | - | - | - |
@@ -272,7 +298,7 @@
 | AnyGPT | - | - | - |
 | Phi-1.5 | - | - | - |
 
-#### 2.2.4 Data Accessibility → Data-free pruning/quantization
+##### Data-free pruning/quantization
 | Title | Conference | Year | Code |
 |-------|------------|------|------|
 | Phi-1 | - | - | - |
@@ -281,7 +307,7 @@
 | AnyGPT | - | - | - |
 | Phi-1.5 | - | - | - |
 
-#### 2.2.5 Data Accessibility → Data-free meta-learning
+##### Data-free meta-learning
 | Title | Conference | Year | Code |
 |-------|------------|------|------|
 | Phi-1 | - | - | - |
@@ -290,7 +316,7 @@
 | AnyGPT | - | - | - |
 | Phi-1.5 | - | - | - |
 
-#### 2.2.6 Data Accessibility → Data-free continual learning
+##### Data-free continual learning
 | Title | Conference | Year | Code |
 |-------|------------|------|------|
 | Phi-1 | - | - | - |
@@ -299,22 +325,26 @@
 | AnyGPT | - | - | - |
 | Phi-1.5 | - | - | - |
 
-#### 2.2.7 Data Refinement → Dataset distillation
+---
+
+#### 2.2.2 Data Refinement
+
+##### Dataset distillation
 | Title | Conference | Year | Code |
 |-------|------------|------|------|
 | VILA-2 | - | - | - |
 
-#### 2.2.8 Data Refinement → Dataset augmentation
+##### Dataset augmentation
 | Title | Conference | Year | Code |
 |-------|------------|------|------|
 | VILA-2 | - | - | - |
 
-#### 2.2.9 Data Refinement → Dataset expansion
+##### Dataset expansion
 | Title | Conference | Year | Code |
 |-------|------------|------|------|
 | VILA-2 | - | - | - |
 
-#### 2.2.10 Data Refinement → Dataset purification
+##### Dataset purification
 | Title | Conference | Year | Code |
 |-------|------------|------|------|
 | VILA-2 | - | - | - |
@@ -323,56 +353,74 @@
 
 ### 2.3 Trustworthy AI
 
-#### 2.3.1 Privacy → Privacy-preserving learning
+#### 2.3.1 Privacy
+
+##### Privacy-preserving learning
 | Title | Conference | Year | Code |
 |-------|------------|------|------|
 | LAB | - | - | - |
 | LLM2LLM | - | - | - |
 | GLAN | - | - | - |
 
-#### 2.3.2 Safety & Security → Model inversion attack
+---
+
+#### 2.3.2 Safety & Security
+
+##### Model inversion attack
 | Title | Conference | Year | Code |
 |-------|------------|------|------|
 | LAB | - | - | - |
 | LLM2LLM | - | - | - |
 | GLAN | - | - | - |
 
-#### 2.3.3 Safety & Security → Model stealing attack
+##### Model stealing attack
 | Title | Conference | Year | Code |
 |-------|------------|------|------|
 | LAB | - | - | - |
 | LLM2LLM | - | - | - |
 | GLAN | - | - | - |
 
-#### 2.3.4 Safety & Security → Machine unlearning
+##### Machine unlearning
 | Title | Conference | Year | Code |
 |-------|------------|------|------|
 | LAB | - | - | - |
 | LLM2LLM | - | - | - |
 | GLAN | - | - | - |
 
-#### 2.3.5 Fairness → De-bias learning
+---
+
+#### 2.3.3 Fairness
+
+##### De-bias learning
 | Title | Conference | Year | Code |
 |-------|------------|------|------|
 | LAB | - | - | - |
 | LLM2LLM | - | - | - |
 | GLAN | - | - | - |
 
-#### 2.3.6 Fairness → Long-tail learning
+##### Long-tail learning
 | Title | Conference | Year | Code |
 |-------|------------|------|------|
 | LAB | - | - | - |
 | LLM2LLM | - | - | - |
 | GLAN | - | - | - |
 
-#### 2.3.7 Interpretability → Explainable AI
+---
+
+#### 2.3.4 Interpretability
+
+##### Explainable AI
 | Title | Conference | Year | Code |
 |-------|------------|------|------|
 | LAB | - | - | - |
 | LLM2LLM | - | - | - |
 | GLAN | - | - | - |
 
-#### 2.3.8 Governance → Data watermarking
+---
+
+#### 2.3.5 Governance
+
+##### Data watermarking
 | Title | Conference | Year | Code |
 |-------|------------|------|------|
 | LAB | - | - | - |
@@ -383,7 +431,9 @@
 
 ### 2.4 Embodied AI
 
-#### 2.4.1 Sensory Perception Synthesis → Visual Modalities
+#### 2.4.1 Sensory Perception Synthesis
+
+##### Visual Modalities
 | Title | Conference | Year | Code |
 |-------|------------|------|------|
 | Isaac Lab | - | - | - |
@@ -391,14 +441,14 @@
 | Re3Sim | - | - | - |
 | Habitat | - | - | - |
 
-#### 2.4.2 Sensory Perception Synthesis → Proprioceptive & Force Sensing
+##### Proprioceptive & Force Sensing
 | Title | Conference | Year | Code |
 |-------|------------|------|------|
 | DeXtreme | - | - | - |
 | ARNOLD | - | - | - |
 | Isaac Lab | - | - | - |
 
-#### 2.4.3 Sensory Perception Synthesis → Multi-modal Sensor Fusion
+##### Multi-modal Sensor Fusion
 | Title | Conference | Year | Code |
 |-------|------------|------|------|
 | SpatialVLM | - | - | - |
@@ -406,7 +456,11 @@
 | PaLM-E | - | - | - |
 | EmbodiedGPT | - | - | - |
 
-#### 2.4.4 Action & Behavior Generation → Trajectory Synthesis
+---
+
+#### 2.4.2 Action & Behavior Generation
+
+##### Trajectory Synthesis
 | Title | Conference | Year | Code |
 |-------|------------|------|------|
 | Alpaca | - | - | - |
@@ -415,7 +469,7 @@
 | Baize | - | - | - |
 | LLaVA | - | - | - |
 
-#### 2.4.5 Action & Behavior Generation → Task & Environment Generation
+##### Task & Environment Generation
 | Title | Conference | Year | Code |
 |-------|------------|------|------|
 | Alpaca | - | - | - |
@@ -424,7 +478,7 @@
 | Baize | - | - | - |
 | LLaVA | - | - | - |
 
-#### 2.4.6 Action & Behavior Generation → Human Behavior Synthesis
+##### Human Behavior Synthesis
 | Title | Conference | Year | Code |
 |-------|------------|------|------|
 | Alpaca | - | - | - |
@@ -433,7 +487,11 @@
 | Baize | - | - | - |
 | LLaVA | - | - | - |
 
-#### 2.4.7 Policy Learning & Generalization → Cross-embodiment Training
+---
+
+#### 2.4.3 Policy Learning & Generalization
+
+##### Cross-embodiment Training
 | Title | Conference | Year | Code |
 |-------|------------|------|------|
 | Alpaca | - | - | - |
@@ -442,7 +500,7 @@
 | Baize | - | - | - |
 | LLaVA | - | - | - |
 
-#### 2.4.8 Policy Learning & Generalization → Vision-Language-Action Models
+##### Vision-Language-Action Models
 | Title | Conference | Year | Code |
 |-------|------------|------|------|
 | Alpaca | - | - | - |
@@ -451,7 +509,7 @@
 | Baize | - | - | - |
 | LLaVA | - | - | - |
 
-#### 2.4.9 Policy Learning & Generalization → Sim-to-Real Transfer
+##### Sim-to-Real Transfer
 | Title | Conference | Year | Code |
 |-------|------------|------|------|
 | Alpaca | - | - | - |
@@ -464,42 +522,48 @@
 
 ### 2.5 Others
 
-#### 2.5.1 Domain-specific Applications → Autonomous driving
+#### 2.5.1 Domain-specific Applications
+
+##### Autonomous driving
 | Title | Conference | Year | Code |
 |-------|------------|------|------|
 | ULTRAFEEDBACK | - | - | - |
 | HelpSteer | - | - | - |
 | LEMA | - | - | - |
 
-#### 2.5.2 Domain-specific Applications → Finance
+##### Finance
 | Title | Conference | Year | Code |
 |-------|------------|------|------|
 | ULTRAFEEDBACK | - | - | - |
 | HelpSteer | - | - | - |
 | LEMA | - | - | - |
 
-#### 2.5.3 Domain-specific Applications → Medical
+##### Medical
 | Title | Conference | Year | Code |
 |-------|------------|------|------|
 | ULTRAFEEDBACK | - | - | - |
 | HelpSteer | - | - | - |
 | LEMA | - | - | - |
 
-#### 2.5.4 Domain-specific Applications → Law
+##### Law
 | Title | Conference | Year | Code |
 |-------|------------|------|------|
 | ULTRAFEEDBACK | - | - | - |
 | HelpSteer | - | - | - |
 | LEMA | - | - | - |
 
-#### 2.5.5 Domain-specific Applications → Education
+##### Education
 | Title | Conference | Year | Code |
 |-------|------------|------|------|
 | ULTRAFEEDBACK | - | - | - |
 | HelpSteer | - | - | - |
 | LEMA | - | - | - |
 
-#### 2.5.6 Structure-specific Applications → Time series
+---
+
+#### 2.5.2 Structure-specific Applications
+
+##### Time series
 | Title | Conference | Year | Code |
 |-------|------------|------|------|
 | BAD | - | - | - |
@@ -507,7 +571,7 @@
 | PRM800K | - | - | - |
 | WebGPT | - | - | - |
 
-#### 2.5.7 Structure-specific Applications → Tabular
+##### Tabular
 | Title | Conference | Year | Code |
 |-------|------------|------|------|
 | BAD | - | - | - |
@@ -515,13 +579,15 @@
 | PRM800K | - | - | - |
 | WebGPT | - | - | - |
 
-#### 2.5.8 Structure-specific Applications → Graph
+##### Graph
 | Title | Conference | Year | Code |
 |-------|------------|------|------|
 | BAD | - | - | - |
 | BEAVERTAILS | - | - | - |
 | PRM800K | - | - | - |
 | WebGPT | - | - | - |
+
+---
 
 ## 3. Challenges & Future Directions
 
@@ -560,6 +626,7 @@
 |-------|------------|------|------|
 | PANDA | - | - | - |
 | REGA | - | - | - |
+
 ---
 
 <p align="right" style="font-size: 14px; color: #555; margin-top: 20px;">
