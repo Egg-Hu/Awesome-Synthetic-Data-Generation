@@ -12,602 +12,197 @@
 </div>
 
 <p align="center">
-    <b>Curated collection of papers and resources on synthetic data generation, categorized by paradigms, applications, and challenges.</b>
+    <b>A comprehensive survey and curated collection of resources on synthetic data generation, organized by Methodologies, Applications, and Challenges.</b>
 </p>
 
 ---
 
 <details>
-<summary><strong>📚 Content (click to expand)</strong></summary>
+<summary><strong>📚 Table of Contents (Click to Expand)</strong></summary>
 
-- [1. Paradigms](#1-paradigms)
-  - [1.1 AIGC-Based Synthesis](#11-aigc-based-synthesis)
-    - [1.1.1 Synthesis from scratch](#111-synthesis-from-scratch)
-    - [1.1.2 Synthesis from seeds](#112-synthesis-from-seeds)
-    - [1.1.3 Synthesis from structure](#113-synthesis-from-structure)
+- [1. Methodologies (How)](#1-methodologies-how)
+  - [1.1 Generation-Based Synthesis](#11-generation-based-synthesis)
   - [1.2 Inversion-Based Synthesis](#12-inversion-based-synthesis)
-    - [1.2.1 Data-space inversion](#121-data-space-inversion)
-    - [1.2.2 Latent-space inversion](#122-latent-space-inversion)
   - [1.3 Simulation-Based Synthesis](#13-simulation-based-synthesis)
-    - [1.3.1 Agent-based simulation](#131-agent-based-simulation)
-    - [1.3.2 Platform-based simulation](#132-platform-based-simulation)
   - [1.4 Augmentation-Based Synthesis](#14-augmentation-based-synthesis)
-    - [1.4.1 Rule-based augmentation](#141-rule-based-augmentation)
-    - [1.4.2 Generative augmentation](#142-generative-augmentation)
-
-- [2. Applications](#2-applications)
-  - [2.1 Model-centric AI](#21-model-centric-ai)
-    - [2.1.1 General Model Enhancement → General ability](#211-general-model-enhancement--general-ability)
-    - [2.1.2 Domain Model Enhancement → Reasoning](#212-domain-model-enhancement--reasoning)
-    - [2.1.3 Domain Model Enhancement → Code](#213-domain-model-enhancement--code)
-    - [2.1.4 Domain Model Enhancement → Instruction following](#214-domain-model-enhancement--instruction-following)
-    - [2.1.5 Domain Model Enhancement → Alignment](#215-domain-model-enhancement--alignment)
-    - [2.1.6 Domain Model Enhancement → In-context learning](#216-domain-model-enhancement--in-context-learning)
-    - [2.1.7 Model Evaluation → Synthetic benchmark](#217-model-evaluation--synthetic-benchmark)
-  - [2.2 Data-centric AI](#22-data-centric-ai)
-    - [2.2.1 Data Accessibility → Zero/Few-shot learning](#221-data-accessibility--zerofew-shot-learning)
-    - [2.2.2 Data Accessibility → Federated learning](#222-data-accessibility--federated-learning)
-    - [2.2.3 Data Accessibility → Data-free knowledge distillation](#223-data-accessibility--data-free-knowledge-distillation)
-    - [2.2.4 Data Accessibility → Data-free pruning/quantization](#224-data-accessibility--data-free-pruningquantization)
-    - [2.2.5 Data Accessibility → Data-free meta-learning](#225-data-accessibility--data-free-meta-learning)
-    - [2.2.6 Data Accessibility → Data-free continual learning](#226-data-accessibility--data-free-continual-learning)
-    - [2.2.7 Data Refinement → Dataset distillation](#227-data-refinement--dataset-distillation)
-    - [2.2.8 Data Refinement → Dataset augmentation](#228-data-refinement--dataset-augmentation)
-    - [2.2.9 Data Refinement → Dataset expansion](#229-data-refinement--dataset-expansion)
-    - [2.2.10 Data Refinement → Dataset purification](#2210-data-refinement--dataset-purification)
+- [2. Applications (Why & Where)](#2-applications-why--where)
+  - [2.1 Data-centric AI](#21-data-centric-ai)
+    - [2.1.1 Data Accessibility](#211-data-accessibility)
+    - [2.1.2 Data Refinement](#212-data-refinement)
+  - [2.2 Model-centric AI](#22-model-centric-ai)
+    - [2.2.1 General Model Enhancement](#221-general-model-enhancement)
+    - [2.2.2 Domain Model Enhancement](#222-domain-model-enhancement)
+    - [2.2.3 Model Evaluation](#223-model-evaluation)
   - [2.3 Trustworthy AI](#23-trustworthy-ai)
-    - [2.3.1 Privacy → Privacy-preserving learning](#231-privacy--privacy-preserving-learning)
-    - [2.3.2 Safety & Security → Model inversion attack](#232-safety--security--model-inversion-attack)
-    - [2.3.3 Safety & Security → Model stealing attack](#233-safety--security--model-stealing-attack)
-    - [2.3.4 Safety & Security → Machine unlearning](#234-safety--security--machine-unlearning)
-    - [2.3.5 Fairness → De-bias learning](#235-fairness--de-bias-learning)
-    - [2.3.6 Fairness → Long-tail learning](#236-fairness--long-tail-learning)
-    - [2.3.7 Interpretability → Explainable AI](#237-interpretability--explainable-ai)
-    - [2.3.8 Governance → Data watermarking](#238-governance--data-watermarking)
+    - [2.3.1 Privacy](#231-privacy)
+    - [2.3.2 Safety & Security](#232-safety--security)
+    - [2.3.3 Fairness](#233-fairness)
+    - [2.3.4 Interpretability](#234-interpretability)
+    - [2.3.5 Governance](#235-governance)
   - [2.4 Embodied AI](#24-embodied-ai)
-    - [2.4.1 Sensory Perception Synthesis → Visual Modalities](#241-sensory-perception-synthesis--visual-modalities)
-    - [2.4.2 Sensory Perception Synthesis → Proprioceptive & Force Sensing](#242-sensory-perception-synthesis--proprioceptive--force-sensing)
-    - [2.4.3 Sensory Perception Synthesis → Multi-modal Sensor Fusion](#243-sensory-perception-synthesis--multi-modal-sensor-fusion)
-    - [2.4.4 Action & Behavior Generation → Trajectory Synthesis](#244-action--behavior-generation--trajectory-synthesis)
-    - [2.4.5 Action & Behavior Generation → Task & Environment Generation](#245-action--behavior-generation--task--environment-generation)
-    - [2.4.6 Action & Behavior Generation → Human Behavior Synthesis](#246-action--behavior-generation--human-behavior-synthesis)
-    - [2.4.7 Policy Learning & Generalization → Cross-embodiment Training](#247-policy-learning--generalization--cross-embodiment-training)
-    - [2.4.8 Policy Learning & Generalization → Vision-Language-Action Models](#248-policy-learning--generalization--vision-language-action-models)
-    - [2.4.9 Policy Learning & Generalization → Sim-to-Real Transfer](#249-policy-learning--generalization--sim-to-real-transfer)
-  - [2.5 Others](#25-others)
-    - [2.5.1 Domain-specific Applications → Autonomous driving](#251-domain-specific-applications--autonomous-driving)
-    - [2.5.2 Domain-specific Applications → Finance](#252-domain-specific-applications--finance)
-    - [2.5.3 Domain-specific Applications → Medical](#253-domain-specific-applications--medical)
-    - [2.5.4 Domain-specific Applications → Law](#254-domain-specific-applications--law)
-    - [2.5.5 Domain-specific Applications → Education](#255-domain-specific-applications--education)
-    - [2.5.6 Structure-specific Applications → Time series](#256-structure-specific-applications--time-series)
-    - [2.5.7 Structure-specific Applications → Tabular](#257-structure-specific-applications--tabular)
-    - [2.5.8 Structure-specific Applications → Graph](#258-structure-specific-applications--graph)
-
+    - [2.4.1 Perception](#241-perception)
+    - [2.4.2 Interaction](#242-interaction)
+    - [2.4.3 Generalization](#243-generalization)
 - [3. Challenges & Future Directions](#3-challenges--future-directions)
-  - [3.1 Model Collapse](#31-model-collapse)
-  - [3.2 Active Synthesis](#32-active-synthesis)
-  - [3.3 Synthetic Data Evaluation](#33-synthetic-data-evaluation)
-  - [3.4 Multi-Modal Synthesis](#34-multi-modal-synthesis)
 
 </details>
 
 ---
 
-## 1. Paradigms
+## 1. Methodologies (How)
 
-### 1.1 AIGC-Based Synthesis
+### 1.1 Generation-Based Synthesis
+*Creating data from scratch, seeds, or structural constraints.*
 
-#### 1.1.1 Synthesis from scratch
-| Title | Conference | Year | Code |
-|-------|------------|------|------|
-| T-SciQ | - | - | - |
-| ChatGPT-based | - | - | - |
-
-#### 1.1.2 Synthesis from seeds
-| Title | Conference | Year | Code |
-|-------|------------|------|------|
-| Mosaic | - | - | - |
-| CORE | - | - | - |
-| ALIA | - | - | - |
-| ChatAug | - | - | - |
-
-#### 1.1.3 Synthesis from structure
-| Title | Conference | Year | Code |
-|-------|------------|------|------|
-| Co-annotating | - | - | - |
-| ToolCoder | - | - | - |
-
----
+| Sub-category | Representative Papers/Methods |
+|--------------|-------------------------------|
+| **Synthesis from scratch** | Self-Instruct, SynCLR, Absolute Zero, DreamTeacher |
+| **Synthesis from seeds** | Mosaic, CORE, ALIA, ChatAug |
+| **Synthesis from structure** | Co-annotating, ToolCoder |
+| **Synthesis with evolution** | Co-annotating, ToolCoder |
 
 ### 1.2 Inversion-Based Synthesis
+*Recovering input data from model parameters or outputs.*
 
-#### 1.2.1 Data-space inversion
-| Title | Conference | Year | Code |
-|-------|------------|------|------|
-| TinyStories | - | - | - |
-| Phi-1 | - | - | - |
-| Alpagasus | - | - | - |
-| WizardLM | - | - | - |
-
-#### 1.2.2 Latent-space inversion
-| Title | Conference | Year | Code |
-|-------|------------|------|------|
-| Minerva | - | - | - |
-| DeepSeek-Prover | - | - | - |
-| WizardCoder | - | - | - |
-
----
+| Sub-category | Representative Papers/Methods |
+|--------------|-------------------------------|
+| **Data-space inversion** | TinyStories, Phi-1, Alpagasus, WizardLM |
+| **Latent-space inversion** | Minerva, DeepSeek-Prover, WizardCoder |
 
 ### 1.3 Simulation-Based Synthesis
+*Generating data via multi-agent interactions or physics engines.*
 
-#### 1.3.1 Agent-based simulation
-| Title | Conference | Year | Code |
-|-------|------------|------|------|
-| TinyStories | - | - | - |
-| Phi-1 | - | - | - |
-| Alpagasus | - | - | - |
-| WizardLM | - | - | - |
-
-#### 1.3.2 Platform-based simulation
-| Title | Conference | Year | Code |
-|-------|------------|------|------|
-| Minerva | - | - | - |
-| DeepSeek-Prover | - | - | - |
-| WizardCoder | - | - | - |
-
----
+| Sub-category | Representative Papers/Methods |
+|--------------|-------------------------------|
+| **Agent-based simulation** | TinyStories, Phi-1, Alpagasus, WizardLM |
+| **Platform-based simulation** | Minerva, DeepSeek-Prover, WizardCoder |
 
 ### 1.4 Augmentation-Based Synthesis
+*Transforming existing data to enhance diversity.*
 
-#### 1.4.1 Rule-based augmentation
-| Title | Conference | Year | Code |
-|-------|------------|------|------|
-| TinyStories | - | - | - |
-| Phi-1 | - | - | - |
-| Alpagasus | - | - | - |
-| WizardLM | - | - | - |
-
-#### 1.4.2 Generative augmentation
-| Title | Conference | Year | Code |
-|-------|------------|------|------|
-| Minerva | - | - | - |
-| DeepSeek-Prover | - | - | - |
-| WizardCoder | - | - | - |
+| Sub-category | Representative Papers/Methods |
+|--------------|-------------------------------|
+| **Rule-based augmentation** | TinyStories, Phi-1, Alpagasus, WizardLM |
+| **Generative augmentation** | Minerva, DeepSeek-Prover, WizardCoder |
 
 ---
 
-## 2. Applications
+## 2. Applications (Why & Where)
 
-### 2.1 Model-centric AI
+### 2.1 Data-centric AI
+*Building the Foundation: Overcoming scarcity and improving quality.*
 
-#### 2.1.1 General Model Enhancement
+#### 2.1.1 Data Accessibility
+| Problem Setting | Representative Papers/Methods |
+|-----------------|-------------------------------|
+| **Zero/Few-shot learning** | Phi-1, SciLitLLM, TRAIT, AnyGPT, Phi-1.5 |
+| **Federated learning** | Phi-1, SciLitLLM, TRAIT, AnyGPT, Phi-1.5 |
+| **Data-free knowledge distillation** | Phi-1, SciLitLLM, TRAIT, AnyGPT, Phi-1.5 |
+| **Data-free pruning/quantization** | Phi-1, SciLitLLM, TRAIT, AnyGPT, Phi-1.5 |
+| **Data-free meta-learning** | Phi-1, SciLitLLM, TRAIT, AnyGPT, Phi-1.5 |
+| **Data-free continual learning** | Phi-1, SciLitLLM, TRAIT, AnyGPT, Phi-1.5 |
 
-##### General ability
-| Title | Conference | Year | Code |
-|-------|------------|------|------|
-| Dialogic | - | - | - |
-| MathInstruct | - | - | - |
-| Genixer | - | - | - |
-| Magpie | - | - | - |
-| MMIQC | - | - | - |
-
-##### Reasoning
-| Title | Conference | Year | Code |
-|-------|------------|------|------|
-| Dialogic | - | - | - |
-| MathInstruct | - | - | - |
-| Genixer | - | - | - |
-| Magpie | - | - | - |
-| MMIQC | - | - | - |
-
-##### Code
-| Title | Conference | Year | Code |
-|-------|------------|------|------|
-| Dialogic | - | - | - |
-| MathInstruct | - | - | - |
-| Genixer | - | - | - |
-| Magpie | - | - | - |
-| MMIQC | - | - | - |
-
-##### Instruction following
-| Title | Conference | Year | Code |
-|-------|------------|------|------|
-| Dialogic | - | - | - |
-| MathInstruct | - | - | - |
-| Genixer | - | - | - |
-| Magpie | - | - | - |
-| MMIQC | - | - | - |
-
-##### Alignment
-| Title | Conference | Year | Code |
-|-------|------------|------|------|
-| Dialogic | - | - | - |
-| MathInstruct | - | - | - |
-| Genixer | - | - | - |
-| Magpie | - | - | - |
-| MMIQC | - | - | - |
-
-##### In-context learning
-| Title | Conference | Year | Code |
-|-------|------------|------|------|
-| Dialogic | - | - | - |
-| MathInstruct | - | - | - |
-| Genixer | - | - | - |
-| Magpie | - | - | - |
-| MMIQC | - | - | - |
+#### 2.1.2 Data Refinement
+| Problem Setting | Representative Papers/Methods |
+|-----------------|-------------------------------|
+| **Dataset distillation** | VILA-2 |
+| **Dataset purification** | VILA-2 |
 
 ---
 
-#### 2.1.2 Model Evaluation
+### 2.2 Model-centric AI
+*Driving the Engine: Enhancing capabilities and evaluation.*
 
-##### Synthetic benchmark
-| Title | Conference | Year | Code |
-|-------|------------|------|------|
-| Disco | - | - | - |
-| GPT3Mix | - | - | - |
+#### 2.2.1 General Model Enhancement
+| Goal | Representative Papers/Methods |
+|------|-------------------------------|
+| **General ability** | Dialogic, MathInstruct, Genixer, Magpie, MMIQC |
 
----
+#### 2.2.2 Domain Model Enhancement
+| Goal | Representative Papers/Methods |
+|------|-------------------------------|
+| **Reasoning** | Dialogic, MathInstruct, Genixer, Magpie, MMIQC |
+| **Code** | Dialogic, MathInstruct, Genixer, Magpie, MMIQC |
+| **Instruction following** | Dialogic, MathInstruct, Genixer, Magpie, MMIQC |
+| **Preference** | Dialogic, MathInstruct, Genixer, Magpie, MMIQC |
+| **Reinforcement Learning** | Dialogic, MathInstruct, Genixer, Magpie, MMIQC |
 
-### 2.2 Data-centric AI
-
-#### 2.2.1 Data Accessibility
-
-##### Zero/Few-shot learning
-| Title | Conference | Year | Code |
-|-------|------------|------|------|
-| Phi-1 | - | - | - |
-| SciLitLLM | - | - | - |
-| TRAIT | - | - | - |
-| AnyGPT | - | - | - |
-| Phi-1.5 | - | - | - |
-
-##### Federated learning
-| Title | Conference | Year | Code |
-|-------|------------|------|------|
-| Phi-1 | - | - | - |
-| SciLitLLM | - | - | - |
-| TRAIT | - | - | - |
-| AnyGPT | - | - | - |
-| Phi-1.5 | - | - | - |
-
-##### Data-free knowledge distillation
-| Title | Conference | Year | Code |
-|-------|------------|------|------|
-| Phi-1 | - | - | - |
-| SciLitLLM | - | - | - |
-| TRAIT | - | - | - |
-| AnyGPT | - | - | - |
-| Phi-1.5 | - | - | - |
-
-##### Data-free pruning/quantization
-| Title | Conference | Year | Code |
-|-------|------------|------|------|
-| Phi-1 | - | - | - |
-| SciLitLLM | - | - | - |
-| TRAIT | - | - | - |
-| AnyGPT | - | - | - |
-| Phi-1.5 | - | - | - |
-
-##### Data-free meta-learning
-| Title | Conference | Year | Code |
-|-------|------------|------|------|
-| Phi-1 | - | - | - |
-| SciLitLLM | - | - | - |
-| TRAIT | - | - | - |
-| AnyGPT | - | - | - |
-| Phi-1.5 | - | - | - |
-
-##### Data-free continual learning
-| Title | Conference | Year | Code |
-|-------|------------|------|------|
-| Phi-1 | - | - | - |
-| SciLitLLM | - | - | - |
-| TRAIT | - | - | - |
-| AnyGPT | - | - | - |
-| Phi-1.5 | - | - | - |
-
----
-
-#### 2.2.2 Data Refinement
-
-##### Dataset distillation
-| Title | Conference | Year | Code |
-|-------|------------|------|------|
-| VILA-2 | - | - | - |
-
-##### Dataset augmentation
-| Title | Conference | Year | Code |
-|-------|------------|------|------|
-| VILA-2 | - | - | - |
-
-##### Dataset expansion
-| Title | Conference | Year | Code |
-|-------|------------|------|------|
-| VILA-2 | - | - | - |
-
-##### Dataset purification
-| Title | Conference | Year | Code |
-|-------|------------|------|------|
-| VILA-2 | - | - | - |
+#### 2.2.3 Model Evaluation
+| Goal | Representative Papers/Methods |
+|------|-------------------------------|
+| **In-context learning** | Dialogic, MathInstruct, Genixer, Magpie, MMIQC |
+| **Synthetic benchmark** | Disco, GPT3Mix |
 
 ---
 
 ### 2.3 Trustworthy AI
+*The Guardrails: Ensuring safety, privacy, and fairness.*
 
 #### 2.3.1 Privacy
-
-##### Privacy-preserving learning
-| Title | Conference | Year | Code |
-|-------|------------|------|------|
-| LAB | - | - | - |
-| LLM2LLM | - | - | - |
-| GLAN | - | - | - |
-
----
+| Problem Setting | Representative Papers/Methods |
+|-----------------|-------------------------------|
+| **Privacy-preserving learning** | LAB, LLM2LLM, GLAN |
+| **Model inversion attack** | LAB, LLM2LLM, GLAN |
 
 #### 2.3.2 Safety & Security
-
-##### Model inversion attack
-| Title | Conference | Year | Code |
-|-------|------------|------|------|
-| LAB | - | - | - |
-| LLM2LLM | - | - | - |
-| GLAN | - | - | - |
-
-##### Model stealing attack
-| Title | Conference | Year | Code |
-|-------|------------|------|------|
-| LAB | - | - | - |
-| LLM2LLM | - | - | - |
-| GLAN | - | - | - |
-
-##### Machine unlearning
-| Title | Conference | Year | Code |
-|-------|------------|------|------|
-| LAB | - | - | - |
-| LLM2LLM | - | - | - |
-| GLAN | - | - | - |
-
----
+| Problem Setting | Representative Papers/Methods |
+|-----------------|-------------------------------|
+| **Model stealing attack** | LAB, LLM2LLM, GLAN |
+| **Adversarial defense** | LAB, LLM2LLM, GLAN |
+| **Machine unlearning** | LAB, LLM2LLM, GLAN |
 
 #### 2.3.3 Fairness
-
-##### De-bias learning
-| Title | Conference | Year | Code |
-|-------|------------|------|------|
-| LAB | - | - | - |
-| LLM2LLM | - | - | - |
-| GLAN | - | - | - |
-
-##### Long-tail learning
-| Title | Conference | Year | Code |
-|-------|------------|------|------|
-| LAB | - | - | - |
-| LLM2LLM | - | - | - |
-| GLAN | - | - | - |
-
----
+| Problem Setting | Representative Papers/Methods |
+|-----------------|-------------------------------|
+| **De-bias learning** | LAB, LLM2LLM, GLAN |
+| **Long-tail learning** | LAB, LLM2LLM, GLAN |
 
 #### 2.3.4 Interpretability
-
-##### Explainable AI
-| Title | Conference | Year | Code |
-|-------|------------|------|------|
-| LAB | - | - | - |
-| LLM2LLM | - | - | - |
-| GLAN | - | - | - |
-
----
+| Problem Setting | Representative Papers/Methods |
+|-----------------|-------------------------------|
+| **Explainable AI** | LAB, LLM2LLM, GLAN |
 
 #### 2.3.5 Governance
-
-##### Data watermarking
-| Title | Conference | Year | Code |
-|-------|------------|------|------|
-| LAB | - | - | - |
-| LLM2LLM | - | - | - |
-| GLAN | - | - | - |
+| Problem Setting | Representative Papers/Methods |
+|-----------------|-------------------------------|
+| **Data watermarking** | LAB, LLM2LLM, GLAN |
 
 ---
 
 ### 2.4 Embodied AI
+*The Frontier: Bridging digital intelligence with the physical world.*
 
-#### 2.4.1 Sensory Perception Synthesis
+#### 2.4.1 Perception
+| Task | Representative Papers/Methods |
+|------|-------------------------------|
+| **Visual sensing** | Isaac Lab, SplatSim, Re3Sim, Habitat |
+| **Force sensing** | DeXtreme, ARNOLD, Isaac Lab |
+| **Sensor fusion** | SpatialVLM, RT-2, PaLM-E, EmbodiedGPT |
 
-##### Visual Modalities
-| Title | Conference | Year | Code |
-|-------|------------|------|------|
-| Isaac Lab | - | - | - |
-| SplatSim | - | - | - |
-| Re3Sim | - | - | - |
-| Habitat | - | - | - |
+#### 2.4.2 Interaction
+| Task | Representative Papers/Methods |
+|------|-------------------------------|
+| **Trajectory synthesis** | Alpaca, Vicuna, Orca, Baize, LLaVA |
+| **Environment synthesis** | Alpaca, Vicuna, Orca, Baize, LLaVA |
+| **Human behavior synthesis** | Alpaca, Vicuna, Orca, Baize, LLaVA |
 
-##### Proprioceptive & Force Sensing
-| Title | Conference | Year | Code |
-|-------|------------|------|------|
-| DeXtreme | - | - | - |
-| ARNOLD | - | - | - |
-| Isaac Lab | - | - | - |
-
-##### Multi-modal Sensor Fusion
-| Title | Conference | Year | Code |
-|-------|------------|------|------|
-| SpatialVLM | - | - | - |
-| RT-2 | - | - | - |
-| PaLM-E | - | - | - |
-| EmbodiedGPT | - | - | - |
-
----
-
-#### 2.4.2 Action & Behavior Generation
-
-##### Trajectory Synthesis
-| Title | Conference | Year | Code |
-|-------|------------|------|------|
-| Alpaca | - | - | - |
-| Vicuna | - | - | - |
-| Orca | - | - | - |
-| Baize | - | - | - |
-| LLaVA | - | - | - |
-
-##### Task & Environment Generation
-| Title | Conference | Year | Code |
-|-------|------------|------|------|
-| Alpaca | - | - | - |
-| Vicuna | - | - | - |
-| Orca | - | - | - |
-| Baize | - | - | - |
-| LLaVA | - | - | - |
-
-##### Human Behavior Synthesis
-| Title | Conference | Year | Code |
-|-------|------------|------|------|
-| Alpaca | - | - | - |
-| Vicuna | - | - | - |
-| Orca | - | - | - |
-| Baize | - | - | - |
-| LLaVA | - | - | - |
-
----
-
-#### 2.4.3 Policy Learning & Generalization
-
-##### Cross-embodiment Training
-| Title | Conference | Year | Code |
-|-------|------------|------|------|
-| Alpaca | - | - | - |
-| Vicuna | - | - | - |
-| Orca | - | - | - |
-| Baize | - | - | - |
-| LLaVA | - | - | - |
-
-##### Vision-Language-Action Models
-| Title | Conference | Year | Code |
-|-------|------------|------|------|
-| Alpaca | - | - | - |
-| Vicuna | - | - | - |
-| Orca | - | - | - |
-| Baize | - | - | - |
-| LLaVA | - | - | - |
-
-##### Sim-to-Real Transfer
-| Title | Conference | Year | Code |
-|-------|------------|------|------|
-| Alpaca | - | - | - |
-| Vicuna | - | - | - |
-| Orca | - | - | - |
-| Baize | - | - | - |
-| LLaVA | - | - | - |
-
----
-
-### 2.5 Others
-
-#### 2.5.1 Domain-specific Applications
-
-##### Autonomous driving
-| Title | Conference | Year | Code |
-|-------|------------|------|------|
-| ULTRAFEEDBACK | - | - | - |
-| HelpSteer | - | - | - |
-| LEMA | - | - | - |
-
-##### Finance
-| Title | Conference | Year | Code |
-|-------|------------|------|------|
-| ULTRAFEEDBACK | - | - | - |
-| HelpSteer | - | - | - |
-| LEMA | - | - | - |
-
-##### Medical
-| Title | Conference | Year | Code |
-|-------|------------|------|------|
-| ULTRAFEEDBACK | - | - | - |
-| HelpSteer | - | - | - |
-| LEMA | - | - | - |
-
-##### Law
-| Title | Conference | Year | Code |
-|-------|------------|------|------|
-| ULTRAFEEDBACK | - | - | - |
-| HelpSteer | - | - | - |
-| LEMA | - | - | - |
-
-##### Education
-| Title | Conference | Year | Code |
-|-------|------------|------|------|
-| ULTRAFEEDBACK | - | - | - |
-| HelpSteer | - | - | - |
-| LEMA | - | - | - |
-
----
-
-#### 2.5.2 Structure-specific Applications
-
-##### Time series
-| Title | Conference | Year | Code |
-|-------|------------|------|------|
-| BAD | - | - | - |
-| BEAVERTAILS | - | - | - |
-| PRM800K | - | - | - |
-| WebGPT | - | - | - |
-
-##### Tabular
-| Title | Conference | Year | Code |
-|-------|------------|------|------|
-| BAD | - | - | - |
-| BEAVERTAILS | - | - | - |
-| PRM800K | - | - | - |
-| WebGPT | - | - | - |
-
-##### Graph
-| Title | Conference | Year | Code |
-|-------|------------|------|------|
-| BAD | - | - | - |
-| BEAVERTAILS | - | - | - |
-| PRM800K | - | - | - |
-| WebGPT | - | - | - |
+#### 2.4.3 Generalization
+| Task | Representative Papers/Methods |
+|------|-------------------------------|
+| **Cross-embodiment training** | Alpaca, Vicuna, Orca, Baize, LLaVA |
+| **Vision-language-action models** | Alpaca, Vicuna, Orca, Baize, LLaVA |
+| **Sim-to-real transfer** | Alpaca, Vicuna, Orca, Baize, LLaVA |
 
 ---
 
 ## 3. Challenges & Future Directions
 
-### 3.1 Model Collapse
-| Title | Conference | Year | Code |
-|-------|------------|------|------|
-| d-RLAIF | - | - | - |
-| LLM2LLM | - | - | - |
-| Wizardmath | - | - | - |
-| STaR | - | - | - |
-| SciGLM | - | - | - |
-| ChemLLM | - | - | - |
-
----
-
-### 3.2 Active Synthesis
-| Title | Conference | Year | Code |
-|-------|------------|------|------|
-| LLMs4Synthesis | - | - | - |
-| CoRAL | - | - | - |
-| FORD | - | - | - |
-| LTGC | - | - | - |
-
----
-
-### 3.3 Synthetic Data Evaluation
-| Title | Conference | Year | Code |
-|-------|------------|------|------|
-| DataDreamer | - | - | - |
-| HARMONIC | - | - | - |
-
----
-
-### 3.4 Multi-Modal Synthesis
-| Title | Conference | Year | Code |
-|-------|------------|------|------|
-| PANDA | - | - | - |
-| REGA | - | - | - |
+| Challenge | Representative Papers/Methods |
+|-----------|-------------------------------|
+| **Model Collapse** | d-RLAIF, LLM2LLM, Wizardmath, STaR, SciGLM, ChemLLM |
+| **Active Synthesis** | LLMs4Synthesis, CoRAL, FORD, LTGC |
+| **Synthetic Data Evaluation** | DataDreamer, HARMONIC |
+| **Multi-Modal Synthesis** | PANDA, REGA |
 
 ---
 
