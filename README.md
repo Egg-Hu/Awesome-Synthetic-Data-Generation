@@ -1,5 +1,3 @@
-<img width="973" height="47" alt="image" src="https://github.com/user-attachments/assets/71e99d01-66ff-4813-829d-16cdcbae93c4" /><a name="readme-top"></a>
-
 <h1 align="center">Awesome Synthetic Data Generation</h1>
 
 <div align="center">
