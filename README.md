@@ -1,4 +1,4 @@
-<a name="readme-top"></a>
+<img width="973" height="47" alt="image" src="https://github.com/user-attachments/assets/71e99d01-66ff-4813-829d-16cdcbae93c4" /><a name="readme-top"></a>
 
 <h1 align="center">Awesome Synthetic Data Generation</h1>
 
@@ -104,7 +104,7 @@
 | [Improving clip training with language rewrites](http://papers.nips.cc/paper_files/paper/2023/hash/6fa4d985e7c434002fb6289ab9b2d654-Abstract-Conference.html) | 2023 | NeurIPS |
 | [R-Zero: Self-Evolving Reasoning LLM from Zero Data](https://arxiv.org/abs/2508.05004) | 2025 | arXiv |
 | [Raft: Reward ranked finetuning for generative foundation model alignment](https://arxiv.org/abs/2304.06767) | 2023 | arXiv |
-| [Reft: Reasoning with reinforced fine-tuning](https://doi.org/10.18653/v1/2024.acl-long.410) | 2024 | [Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)](https://aclanthology.org/volumes/2024.acl-long/) |
+| [Reft: Reasoning with reinforced fine-tuning](https://doi.org/10.18653/v1/2024.acl-long.410) | 2024 | ACL |
 | [Scaling laws of synthetic images for model training... for now](https://doi.org/10.1109/CVPR52733.2024.00705) | 2024 | CVPR |
 | [Self-Rewarding Language Models](https://arxiv.org/abs/2401.10020) | 2024 | arXiv |
 | [Spend wisely: Maximizing post-training gains in iterative synthetic data boostrapping](https://arxiv.org/abs/2501.18962) | 2025 | arXiv |
@@ -312,7 +312,6 @@
 | [Aligning teacher with student preferences for tailored training data generation](https://arxiv.org/abs/2406.19227) | 2024 | arXiv |
 | [Autocoder: Enhancing code large language model with$\backslash$textsc $$AIEV-Instruct$$](https://arxiv.org/abs/2405.14906) | 2024 | arXiv |
 | [Boosting reward model with preference-conditional multi-aspect synthetic data generation](https://arxiv.org/abs/2407.16008) | 2024 | arXiv |
-| [Case2Code: Scalable Synthetic Data for Code Generation](https://aclanthology.org/2025.coling-main.733/) | 2025 | [Proceedings of the 31st International Conference on Computational Linguistics](https://aclanthology.org/volumes/2025.coling-main/) |
 | [ControlMath: Controllable Data Generation Promotes Math Generalist Models](https://doi.org/10.18653/v1/2024.emnlp-main.680) | 2024 | EMNLP |
 | [From the Least to the Most: Building a Plug-and-Play Visual Reasoner via Data Synthesis](https://doi.org/10.18653/v1/2024.emnlp-main.284) | 2024 | EMNLP |
 | [HexaCoder: Secure Code Generation via Oracle-Guided Synthetic Training Data](https://arxiv.org/abs/2409.06446) | 2024 | arXiv |
@@ -356,7 +355,7 @@
 |-------------|------|--------------------|
 | [Absolute zero: Reinforced self-play reasoning with zero data](https://arxiv.org/abs/2505.03335) | 2025 | arXiv |
 | [Autocoder: Enhancing code large language model with$\backslash$textsc $$AIEV-Instruct$$](https://arxiv.org/abs/2405.14906) | 2024 | arXiv |
-| [Case2Code: Scalable Synthetic Data for Code Generation](https://aclanthology.org/2025.coling-main.733/) | 2025 | [Proceedings of the 31st International Conference on Computational Linguistics](https://aclanthology.org/volumes/2025.coling-main/) |
+| [Case2Code: Scalable Synthetic Data for Code Generation](https://aclanthology.org/2025.coling-main.733/) | 2025 | COLING |
 | [Codeclm: Aligning language models with tailored synthetic data](https://arxiv.org/abs/2404.05875) | 2024 | arXiv |
 | [HexaCoder: Secure Code Generation via Oracle-Guided Synthetic Training Data](https://arxiv.org/abs/2409.06446) | 2024 | arXiv |
 | [Increasing LLM Coding Capabilities through Diverse Synthetic Coding Tasks](https://arxiv.org/abs/2510.23208) | 2025 | arXiv |
@@ -408,9 +407,9 @@
 | Paper Title | Year | Conference/Journal |
 |-------------|------|--------------------|
 | [Auto-ICL: In-Context Learning without Human Supervision](https://doi.org/10.48550/arXiv.2311.09263) | 2024 | arXiv |
-| [AUTOMATIC CHAIN OF THOUGHT PROMPTING IN LARGE LANGUAGE MODELS](https://openreview.net/forum?id=5NTt8GFjUHkr) | - | arXiv |
+| [Automatic Chain of Thought Prompting in Large Language Models](https://openreview.net/forum?id=5NTt8GFjUHkr) | 2023 | ICLR |
 | [Demonstration Augmentation for Zero-shot In-context Learning](https://doi.org/10.18653/v1/2024.findings-acl.846) | 2024 | ACL |
-| [Embracing Collaboration Over Competition: Condensing Multiple Prompts for Visual In-Context Learning](https://openaccess.thecvf.com/content/CVPR2025/html/Wang_Embracing_Collaboration_Over_Competition_Condensing_Multiple_Prompts_for_Visual_In-Context_CVPR_2025_paper.html) | - | arXiv |
+| [Embracing Collaboration Over Competition: Condensing Multiple Prompts for Visual In-Context Learning](https://openaccess.thecvf.com/content/CVPR2025/html/Wang_Embracing_Collaboration_Over_Competition_Condensing_Multiple_Prompts_for_Visual_In-Context_CVPR_2025_paper.html) | 2025 | CVPR |
 | [Generate Rather than Retrieve: Large Language Models Are Strong Context Generators](https://openreview.net/forum?id=fB0hRu9GZUS) | 2023 | arXiv |
 | [Privacy-preserving in-context learning with differentially private few-shot generation](https://arxiv.org/abs/2309.11765) | 2023 | arXiv |
 | [Recitation-Augmented Language Models](https://openreview.net/forum?id=-cqvvvb-NkI) | 2023 | arXiv |
@@ -437,10 +436,10 @@
 **Privacy-preserving learning**
 | Paper Title | Year | Conference/Journal |
 |-------------|------|--------------------|
-| [Differentially private synthetic data via foundation model APIs 1: images (2024)](https://arxiv) | - | arXiv |
-| [Differentially private synthetic data via foundation model apis 2: Text](https://arxiv.org/abs/2403.01749) | 2024 | arXiv |
+| [Differentially Private Synthetic Data via Foundation Model APIs 1: Images]([https://arxiv](https://openreview.net/pdf?id=YEhQs8POIo)) | 2024 | ICLR |
+| [Differentially private synthetic data via foundation model APIs 2: Text](https://arxiv.org/abs/2403.01749) | 2024 | arXiv |
 | [Does Training with Synthetic Data Truly Protect Privacy?](https://arxiv.org/abs/2502.12976) | 2025 | arXiv |
-| [Enhancing the utility of privacy-preserving cancer classification using synthetic data](https://doi.org/10.1007/978-3-031-77789-9_6) | 2024 | [MICCAI ](https://deep-breath-miccai.github.io/) |
+| [Enhancing the utility of privacy-preserving cancer classification using synthetic data](https://doi.org/10.1007/978-3-031-77789-9_6) | 2024 | MICCAI |
 | [Federated Knowledge Recycling: Privacy-preserving synthetic data sharing](https://arxiv.org/abs/2407.20830) | 2025 | Pattern Recognition Letters |
 | [Generate synthetic text approximating the private distribution with differential privacy](https://www.ijcai.org/proceedings/2024/735) | 2024 | IJCAI |
 | [Privacy-preserving instructions for aligning large language models](https://arxiv.org/abs/2402.13659) | 2024 | arXiv |
@@ -454,9 +453,9 @@
 **Model inversion attack**
 | Paper Title | Year | Conference/Journal |
 |-------------|------|--------------------|
-| [A methodology for formalizing model-inversion attacks](https://doi.org/10.1109/CSF.2016.32) | 2016 | IEEE |
+| [A methodology for formalizing model-inversion attacks](https://doi.org/10.1109/CSF.2016.32) | 2016 | Computer Security Foundations Symposium |
 | [Gradient inversion of federated diffusion models](https://arxiv.org/abs/2405.20380) | 2024 | arXiv |
-| [Model inversion attacks that exploit confidence information and basic countermeasures](https://doi.org/10.1145/2810103.2813677) | 2015 | ACM |
+| [Model inversion attacks that exploit confidence information and basic countermeasures](https://doi.org/10.1145/2810103.2813677) | 2015 | ACM SIGSAC |
 | [The secret revealer: Generative model-inversion attacks against deep neural networks](https://openaccess.thecvf.com/content_CVPR_2020/html/Zhang_The_Secret_Revealer_Generative_Model-Inversion_Attacks_Against_Deep_Neural_Networks_CVPR_2020_paper.html) | 2020 | CVPR |
 | [Understanding Data Reconstruction Leakage in Federated Learning from a Theoretical Perspective](https://arxiv.org/abs/2408.12119) | 2024 | arXiv |
 #### Safety & Security
@@ -535,7 +534,7 @@
 | [Habitat 3.0: A Co-Habitat for Humans, Avatars, and Robots](https://openreview.net/forum?id=4znwzG92CE) | 2024 | ICLR |
 | [Habitat synthetic scenes dataset (hssd-200): An analysis of 3d scene scale and realism tradeoffs for objectgoal navigation](https://doi.org/10.1109/CVPR52733.2024.01550) | 2024 | CVPR |
 | [MuJoCo: A physics engine for model-based control](https://doi.org/10.1109/IROS.2012.6386109) | 2012 | IEEE |
-| [Orbit: A Unified Simulation Framework for Interactive Robot Learning Environments](https://doi.org/10.1109/LRA.2023.3270034) | 2023 | IEEE |
+| [Orbit: A Unified Simulation Framework for Interactive Robot Learning Environments](https://doi.org/10.1109/LRA.2023.3270034) | 2023 | IEEE Robotics and Automation Letters |
 | [ProcTHOR: Large-Scale Embodied AI Using Procedural Generation](http://papers.nips.cc/paper_files/paper/2022/hash/27c546ab1e4f1d7d638e6a8dfbad9a07-Abstract-Conference.html) | 2022 | NeurIPS |
 | [Re$^3$Sim: Generating High-Fidelity Simulation Data via 3D-Photorealistic Real-to-Sim for Robotic Manipulation](https://arxiv.org/abs/2502.08645) | 2025 | arXiv |
 | [Splatsim: Zero-shot sim2real transfer of rgb manipulation policies using gaussian splatting](https://doi.org/10.1109/ICRA55743.2025.11128339) | 2025 | ICRA |
