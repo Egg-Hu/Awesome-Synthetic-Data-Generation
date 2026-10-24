@@ -387,6 +387,7 @@ ___
 **Preference**
 | Paper Title | Year | Conference/Journal |
 |-------------|------|--------------------|
+| [Chunks as Arms: Multi-Armed Bandit-Guided Sampling for Long-Context LLM Preference Optimization](https://doi.org/10.18653/v1/2026.acl-long.161) | 2026 | ACL |
 | [Spread Preference Annotation: Direct Preference Judgment for Efficient LLM Alignment](https://openreview.net/forum?id=BPgK5XW1Nb) | 2025 | ICLR |
 | [Aligning teacher with student preferences for tailored training data generation](https://arxiv.org/abs/2406.19227) | 2024 | arXiv |
 | [Boosting reward model with preference-conditional multi-aspect synthetic data generation](https://arxiv.org/abs/2407.16008) | 2024 | arXiv |
